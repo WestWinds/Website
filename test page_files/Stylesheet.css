@@ -1,48 +1,35 @@
-@charset "utf-8";
-/* CSS Document */
+@font-face {
+    font-family: FBI;
+    src: url('FBI.ttf');
+    /*url('Thonburi-Bold.eot');
+      IE (TODO) */
+}
+
+@font-face {
+    font-family: helveticaworld-regular;
+    src: url('helvetivaworld-regular.ttf');
+}
+
 body {
 	background-image:url(site_bg.png);
 	background-repeat:no-repeat;
+	background-attachment: fixed;
 	}
 
-@font-face {
-	font-family:Myyraid-Pro;
-	src: local(myraid-pro), url(-CSCO-30--myraid-pro/MYRIADPRO-REGULAR.OTF) format('opentype');
-	}
-a {
-	font-family:Myriad-Pro;
-	}
-	
-h1 {
-	text-align:center;
-	font-family:Myriad-Pro;
-	}
-
-p {
-	font-family:Myriad-Pro;
+pre {
+	font-family:helveticaworld-regular;
 	font-size:16px;
-	}
-textarea {
-	font-family:Myriad-Pro;
 }
 
-embed {
-	autostart="false";
-	autoplay=false;
-	play="false";
-	play=false;
+#nav{
+  background-color: black;
+  
+  width: 100%;
+  top: 100px;
 }
 
-<!--<a id="tips">Useful Tips Section</a>-->
-<!--<a href="#tips">Visit the Useful Tips Section</a>-->
-
-<!-- @font-face { -->
-<!--   font-family: bttf_font; -->
-<!--    src: local(bttf_font), url(-CSCO-30--fonts/bttf.ttf) format('opentype'); -->
-<!--} -->
-
-<!-- h1 { -->
-<!--        font-family:bttf_font; -->
-<!--        font-size:32px; -->
-<!--        font-stretch:extra-expanded; -->
-<!-- } -->
+#nav td{
+  color: white;
+  font-family: FBI;
+  font-size: 20pt;
+}
