@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image:url(site_bg.png);
+	background-repeat:no-repeat;
+	}
+
+@font-face {
+	font-family:Myyraid-Pro;
+	src: local(myraid-pro), url(-CSCO-30--myraid-pro/MYRIADPRO-REGULAR.OTF) format('opentype');
+	}
+a {
+	font-family:Myriad-Pro;
+	}
+	
+h1 {
+	text-align:center;
+	font-family:Myriad-Pro;
+	}
+
+p {
+	font-family:Myriad-Pro;
+	font-size:16px;
+	}
+textarea {
+	font-family:Myriad-Pro;
+}
+
+embed {
+	autostart="false";
+	autoplay=false;
+	play="false";
+	play=false;
+}
+
+<!--<a id="tips">Useful Tips Section</a>-->
+<!--<a href="#tips">Visit the Useful Tips Section</a>-->
+
+<!-- @font-face { -->
+<!--   font-family: bttf_font; -->
+<!--    src: local(bttf_font), url(-CSCO-30--fonts/bttf.ttf) format('opentype'); -->
+<!--} -->
+
+<!-- h1 { -->
+<!--        font-family:bttf_font; -->
+<!--        font-size:32px; -->
+<!--        font-stretch:extra-expanded; -->
+<!-- } -->
