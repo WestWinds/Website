@@ -1,35 +1,46 @@
 @font-face {
     font-family: FBI;
-    src: url('FBI.ttf');
-    /*url('Thonburi-Bold.eot');
-      IE (TODO) */
+    src: url('fonts/FBI.ttf');
 }
 
 @font-face {
     font-family: helveticaworld-regular;
-    src: url('helvetivaworld-regular.ttf');
+    src: url('fonts/helvetivaworld-regular.ttf');
 }
 
 body {
-	background-image:url(site_bg.png);
+	background-image:url(images/site_bg.png);
 	background-repeat:no-repeat;
 	background-attachment: fixed;
-	}
+  margin: 0;
+}
 
-pre {
+pre { /* contains the poetry, for now */
 	font-family:helveticaworld-regular;
 	font-size:16px;
 }
 
 #nav{
   background-color: black;
-  
+  /*position: fixed;*/
   width: 100%;
-  top: 100px;
+  height: 40%;
+}
+
+#container {
 }
 
 #nav td{
   color: white;
   font-family: FBI;
   font-size: 20pt;
+}
+
+#nav img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
 }
