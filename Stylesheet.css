@@ -9,9 +9,6 @@
 }
 
 body {
-	background-image:url(images/site_bg.png);
-	background-repeat:no-repeat;
-	background-attachment: fixed;
   margin: 0;
 }
 
@@ -20,27 +17,49 @@ pre { /* contains the poetry, for now */
 	font-size:16px;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+.center {
+  margin: 0 auto; /* center it */
+}
+
+.FBI-small {
+  font-size: 14pt;
+}
+
+#bg-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('images/site-bg.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
 #nav{
   background-color: black;
   /*position: fixed;*/
   width: 100%;
-  height: 40%;
-}
-
-#container {
 }
 
 #nav td{
   color: white;
   font-family: FBI;
   font-size: 20pt;
+
+  /*border: 1px solid yellow;*/
+  padding: 0;
 }
 
 #nav img {
   max-height: 100%;
   max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
-table {
-  border-collapse: collapse;
+#main-content {
+
 }
