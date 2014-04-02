@@ -1,22 +1,11 @@
-@font-face {
-    font-family: FBI;
-    src: url('fonts/FBI.ttf');
-}
-
-@font-face {
-    font-family: helveticaworld-regular;
-    src: url('fonts/helvetivaworld-regular.ttf');
-}
-
 body {
   margin: 0;
 }
 
-pre { /* contains the poetry, for now */
-	margin-left: 50px;
-  font-family:helveticaworld-regular;
-	font-size:16px;
-
+pre {
+	margin-left: 10%;
+  font-family: helveticaworld-regular;
+	font-size: 16px;
 }
 
 table {
@@ -27,14 +16,7 @@ table {
   border: 10px solid yellow;
 }
 
-.center {
-  margin: 0 auto; /* center it */
-}
-
-.FBI-small {
-  font-size: 14pt;
-}
-
+/*********************/
 .title, .author {
   font-family: FBI;
   text-align: center;
@@ -47,6 +29,8 @@ table {
 .author {
   font-size: 14pt;
 }
+/*********************/
+
 
 #bg-image {
   position: fixed;
@@ -59,15 +43,14 @@ table {
 
 #nav{
   background-color: black;
-  /*position: fixed;*/
   width: 100%;
+  position: fixed;
 }
 
 #nav td{
   color: white;
   font-family: FBI;
   font-size: 20pt;
-
   padding: 0;
 }
 
@@ -78,14 +61,68 @@ table {
   width: auto;*/
 }
 
+#spacer {
+  height: 180px;
+}
+
 #content-wrapper {
   width: 60%;
+  height: 100%;
   margin: 0 auto;
   background-color: rgba(100,100,100,0.75);
+  clear: both;
 }
 
 #content {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
   background-color: white;
+}
+
+/********************************************************************************/
+
+@font-face {
+    font-family: FBI;
+    src: url('fonts/FBI.ttf');
+}
+
+@font-face {
+    font-family: helveticaworld-regular;
+    src: url('fonts/helvetivaworld-regular.ttf');
+}
+
+@font-face {
+    font-family: helveticaworld-bold;
+    src: url('fonts/helvetivaworld-bold.ttf');
+}
+
+@font-face {
+    font-family: helveticaworld-italic;
+    src: url('fonts/helveticaworld-italic.ttf');
+}
+
+@font-face {
+    font-family: helveticaworld-bold-italic;
+    src: url('fonts/helvetivaworld-bold-italic.ttf');
+}
+
+@font-face {
+    font-family: schoolbook-regular;
+    src: url('fonts/schoolbook-regular.ttf');
+}
+
+@font-face {
+    font-family: schoolbook-bold;
+    src: url('fonts/schoolbook-bold.ttf');
+}
+
+@font-face {
+    font-family: schoolbook-italic;
+    src: url('fonts/schoolbook-italic.ttf');
+}
+
+@font-face {
+    font-family: schoolbook-bold-italic;
+    src: url('fonts/schoolbook-bold-italic.ttf');
 }

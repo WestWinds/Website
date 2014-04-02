@@ -10,10 +10,10 @@
 
   <body>
 
-    <div id="bg-image"></div>
+    <img id="bg-image" src="images/site-bg.png"/>
 
-    <table id="nav" height="1px"><!--TODO table doesn't respnd to height change-->
-      <tr height="30px">
+    <table id="nav">
+      <tr>
         <td rowspan="3" width="68px"></td>
         <td rowspan="3" width="198px">
           <img src="images/logo.png" />
@@ -32,11 +32,13 @@
         <td>Art</td>
         <td>Video</td>
         <td>Music</td>
-        <td>Alumni<br /><div class="FBI-small">Submissions</div></td>
+        <td>Alumni<br /><span style="font-size: 14pt">Submissions</span></td>
         <td>Archive</td>
         <td rowspan="3" width="68px"></td>
       </tr>
     </table>
+
+    <div id="spacer"></div> <!-- absolutely necessary because the nav is css position:fixed -->
 
     <div id="content-wrapper">
         <div id="content">
