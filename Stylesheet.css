@@ -16,11 +16,15 @@ pre { /* contains the poetry, for now */
 	margin-left: 50px;
   font-family:helveticaworld-regular;
 	font-size:16px;
-  
+
 }
 
 table {
   border-collapse: collapse;
+}
+
+.debug {
+  border: 10px solid yellow;
 }
 
 .center {
@@ -72,4 +76,16 @@ table {
   max-width: 100%;
   /*height: auto;
   width: auto;*/
+}
+
+#content-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(100,100,100,0.75);
+}
+
+#content {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
 }
