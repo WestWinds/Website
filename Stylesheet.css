@@ -13,8 +13,10 @@ body {
 }
 
 pre { /* contains the poetry, for now */
-	font-family:helveticaworld-regular;
+	margin-left: 50px;
+  font-family:helveticaworld-regular;
 	font-size:16px;
+  
 }
 
 table {
@@ -26,6 +28,19 @@ table {
 }
 
 .FBI-small {
+  font-size: 14pt;
+}
+
+.title, .author {
+  font-family: FBI;
+  text-align: center;
+}
+
+.title {
+  font-size: 20pt;
+}
+
+.author {
   font-size: 14pt;
 }
 
@@ -49,17 +64,12 @@ table {
   font-family: FBI;
   font-size: 20pt;
 
-  /*border: 1px solid yellow;*/
   padding: 0;
 }
 
 #nav img {
   max-height: 100%;
   max-width: 100%;
-  height: auto;
-  width: auto;
-}
-
-#main-content {
-
+  /*height: auto;
+  width: auto;*/
 }
