@@ -1,15 +1,23 @@
 body {
   margin: 0;
+  height: 1vh;
 }
 
 pre {
 	margin-left: 10%;
-  font-family: helveticaworld-regular;
-	font-size: 16px;
+	font-family: helveticaworld-regular;
+	font-size: 18px;
+	line-height: 20px;
+	overflow-y: hidden;
+	overflow-x: auto;
 }
 
 table {
   border-collapse: collapse;
+}
+
+Ul {
+  list-style-type: none;
 }
 
 .debug {
@@ -23,11 +31,11 @@ table {
 }
 
 .title {
-  font-size: 20pt;
+  font-size: 24pt;
 }
 
 .author {
-  font-size: 14pt;
+  font-size: 16pt;
 }
 /*********************/
 
@@ -45,12 +53,13 @@ table {
   background-color: black;
   width: 100%;
   position: fixed;
+  z-index: 2;
 }
 
 #nav td{
   color: white;
   font-family: FBI;
-  font-size: 20pt;
+  font-size: 24pt;
   padding: 0;
 }
 
@@ -67,10 +76,26 @@ table {
 
 #content-wrapper {
   width: 60%;
-  height: 100%;
+  min-height: 100%;
+  
   margin: 0 auto;
+  
   background-color: rgba(100,100,100,0.75);
-  clear: both;
+  z-index: 1;
+}
+
+#authors-column {
+  float: left;
+  width: 20%;
+}
+
+#authors-column li {
+  font-family: helveticaworld-regular;
+	font-size: 20px;
+}
+
+#content-column {
+  margin-left: 20%;
 }
 
 #content {
@@ -89,7 +114,7 @@ table {
 
 @font-face {
     font-family: helveticaworld-regular;
-    src: url('fonts/helvetivaworld-regular.ttf');
+    src: url('fonts/helveticaworld-regular.ttf');
 }
 
 @font-face {
