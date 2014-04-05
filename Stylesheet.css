@@ -1,6 +1,17 @@
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
 body {
   margin: 0;
-  height: 1vh;
+}
+
+body, html {
+  height: 100%;
 }
 
 pre {
@@ -16,12 +27,12 @@ table {
   border-collapse: collapse;
 }
 
-Ul {
+ul {
   list-style-type: none;
 }
 
 .debug {
-  border: 10px solid yellow;
+  border: 5px solid yellow;
 }
 
 /*********************/
@@ -49,18 +60,17 @@ Ul {
   z-index: -1;
 }
 
-#nav{
+#nav {
   background-color: black;
   width: 100%;
   position: fixed;
   z-index: 2;
 }
 
-#nav td{
+#nav td {
   color: white;
   font-family: FBI;
   font-size: 24pt;
-  padding: 0;
 }
 
 #spacer {
@@ -68,13 +78,19 @@ Ul {
 }
 
 #content-wrapper {
-  width: 60%;
-  min-height: 100%;
-  
+  width: 62%;
   margin: 0 auto;
-  
-  background-color: rgba(100,100,100,0.75);
+  background-color: rgba(100,100,100,0.85);
   z-index: 1;
+  height: 100%;
+  float: ;
+}
+
+#content {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
 }
 
 #authors-column {
@@ -87,17 +103,20 @@ Ul {
 	font-size: 20px;
 }
 
-#content-column {
-  margin-left: 20%;
-  
-  border-left: 5px solid black;
+#dummy-column-holder {
+  float: right;
+  width: 80%;
+  height: 100%;
 }
 
-#content {
-  width: 90%;
+#byline-column {
+  float: left;
+  width: 10%;
   height: 100%;
-  margin: 0 auto;
-  background-color: white;
+}
+
+#content-column {
+  width: 90%;
 }
 
 /********************************************************************************/
