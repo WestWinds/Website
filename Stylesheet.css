@@ -44,8 +44,8 @@ Ul {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: url('images/site-bg.png') no-repeat;
-  background-size: 100% 100%;
+  min-width: 1440px;
+  min-height: 810px;
   z-index: -1;
 }
 
@@ -61,13 +61,6 @@ Ul {
   font-family: FBI;
   font-size: 24pt;
   padding: 0;
-}
-
-#nav img {
-  max-height: 100%;
-  max-width: 100%;
-  /*height: auto;
-  width: auto;*/
 }
 
 #spacer {
