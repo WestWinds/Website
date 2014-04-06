@@ -1,17 +1,7 @@
-.clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
-}
-
-body {
-  margin: 0;
-}
-
 body, html {
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 pre {
@@ -78,41 +68,47 @@ ul {
 }
 
 #content-wrapper {
-  width: 62%;
+  width: 60%;
   margin: 0 auto;
   background-color: rgba(100,100,100,0.85);
   z-index: 1;
-  height: 100%;
-  float: ;
+  height: 100%; /* necessary for cascading */
+  overflow: auto; /* necessary for clearing floats */
 }
 
 #content {
-  width: 90%;
-  height: 100%;
+  width: 93%;
+  height: 100%; /* necessary for cascading */
   margin: 0 auto;
   background-color: white;
+  overflow: auto; /* necessary for clearing floats */
 }
 
 #authors-column {
   float: left;
-  width: 20%;
+}
+
+#authors-column > ul {
+  margin-left: 20px;
 }
 
 #authors-column li {
   font-family: helveticaworld-regular;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 #dummy-column-holder {
   float: right;
   width: 80%;
-  height: 100%;
+  height: 100%; /* necessary for cascading */
 }
 
 #byline-column {
   float: left;
-  width: 10%;
-  height: 100%;
+  width: 5px;
+  height: 100%;  /* necessary for cascading */
+  border-left: 4px solid red;
+  border-right: 4px solid black;
 }
 
 #content-column {
