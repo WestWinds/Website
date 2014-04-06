@@ -1,13 +1,12 @@
 
-
-body, html {
+html, body {
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
 pre {
-	margin-left: 10%;
+	margin-left: 15%;
 	font-family: helveticaworld-regular;
 	font-size: 18px;
 	line-height: 20px;
@@ -74,15 +73,16 @@ ul {
   margin: 0 auto;
   background-color: rgba(100,100,100,0.85);
   z-index: 1;
-  height: auto; /* necessary for cascading */
+  height: auto;
+  min-height: 100%;
 }
 
 #content {
   width: 93%;
-  height: auto;
   margin: 0 auto;
   background-color: white;
-  /*overflow: hidden;*/
+  height: auto;
+  min-height: 100%;
 }
 
 #authors-column {
@@ -98,22 +98,17 @@ ul {
 	font-size: 22px;
 }
 
-#dummy-column-holder {
-  float: right;
-  width: 80%;
-  height: auto; /* necessary for cascading */
-}
-
-#byline-column {
-  float: left;
+#byline {
   width: 5px;
+  border-left: 4px solid red; /* the real byline */
+  border-right: 4px solid black; /* the real byline */
   height: 100%;
-  border-left: 4px solid red;
-  border-right: 4px solid black;
+  position: fixed;
 }
 
 #content-column {
-  width: 90%;
+  width: 80%;
+  float: right;
   height: auto;
 }
 
