@@ -6,6 +6,15 @@
     <link rel="shortcut icon" href="/favicon.ico"><!--TODO: favicon-->
 
     <title>Poetry</title>
+
+    <script type="text/javascript">
+        function navfix(event) {
+            document.getElementById("spacer").style.height =
+            document.getElementById("nav").offsetHeight + "px";
+        };
+        window.onload = navfix;
+        window.onresize = navfix;
+    </script>
   </head>
 
   <body>
@@ -13,61 +22,103 @@
     <img id="bg-image" src="images/site-bg.png"/>
 
     <table id="nav">
-      <tr>
-        <td rowspan="2" width="150em"></td>
-        <td rowspan="3">
-            <!-- <img src="images/logo.png" /> -->
+      <tr id="row-1">
+        
+        <td rowspan="2" width="5%"></td>
+        <td rowspan="2" width="6%">
+            <img src="images/logo.png" />
         </td>
+        <td rowspan="2" width="5%"></td>
 
         <td colspan="2">Appreciations</td>
         <td>Staff</td>
-        <td colspan="4">Letter from the Editor-in-Chief</td>
-        <td>Search</td>
+        <td colspan="5" style="text-align: center;">Letter from the Editor-in-Chief</td>
+        <td style="text-align: right;">Search</td>
       </tr>
-      <tr>
+      <tr id="row-2">
         <td>Poetry</td>
         <td>Prose</td>
-        <td>Photography</td>
+        <td style="text-align: right;">Photo</td>
+        <td style="text-align: left;">graphy</td> <!-- yes I know this is weird -->
         <td>Art</td>
         <td>Video</td>
         <td>Music</td>
         <td>Alumni<br /><span style="font-size: 14pt">Submissions</span></td>
         <td>Archive</td>
-        <td rowspan="2" width="300em"></td>
+        <td rowspan="2" width="8%"></td>
+        <td id="nav-fix" rowspan="2">&nbsp;</div>
       </tr>
     </table>
 
-    <div id="spacer">&nbsp;</div> <!-- stop the nav from covering the content -->
+    <div id="spacer">&nbsp;</div>
+    <!-- stop the nav from covering the content -->
 
-            <div id="content"> <!-- visible by white background -->
-            <div id="authors-column">
+    <div id="content"> <!-- visible by white background -->
+        <div id="authors-column">
                 
-                <ul>
-                    <div style="font-family: FBI; font-size: 24pt; margin-bottom: 5px;">Author</div>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                    <li>Jane Doe</li>
-                </ul>
-            </div>
+            <ul>
+                <div style="font-family: FBI; font-size: 24pt; margin-bottom: 5px;">Author</div>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+                <li>Jane Doe</li>
+            </ul>
+        </div>
 
-            <div id="content-column">
+        <div id="content-column">
+
+            <div id="byline"></div>
                 
-                <div class="title">Flavors</div>
-                <div class="author">Aida Becic</div>
+            <div class="title">Flavors</div>
+            <div class="author">Aida Becic</div>
 
                 <pre>
 My teeth become dust, 

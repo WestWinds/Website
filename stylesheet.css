@@ -17,7 +17,7 @@ pre {
 }
 
 table {
-  border-collapse: collapse;
+  /*border-collapse: collapse;*/
 }
 
 ul {
@@ -26,6 +26,16 @@ ul {
 
 .debug {
   border: 5px solid yellow;
+}
+
+/* screen size responsiveness */
+@media screen and (min-width: 3000px) {
+  #nav-fix {
+    width: 500px;
+    height: 100%;
+    background-color: lime;
+    display: block;
+  }
 }
 
 /*********************/
@@ -61,25 +71,35 @@ ul {
   width: 100%;
   position: fixed;
   z-index: 1;
-  height: 20%;
   max-height: 20%;
+  padding: auto;
 }
 
-#nav tr {
+#row-1 {
+  height: 50%;
+}
+
+#row-1 td{
+  vertical-align: bottom;
+}
+
+#row-2 td{
+  /*vertical-align: top;*/
 }
 
 #nav td {
   color: white;
   font-family: FBI;
-  font-size: 28pt;
-  /*border: 1px solid yellow;*/
+  font-size: 200%;
 }
 
 #nav img {
+
 }
 
 #spacer {
-  height: 20%; /* always make this the same height as #nav */
+  /*height: 20%;*/
+  height: 0;
 }
 
 #content {
@@ -90,11 +110,14 @@ ul {
   min-height: 100%;
   padding-top: 10px;
   
-  box-shadow: 0 0 0 55px rgba(100, 100, 100, 0.75);
+  box-shadow: 0 55px 0 55px rgba(100, 100, 100, 0.75); /* transparent gray */
 }
 
 #authors-column {
   float: left;
+  /*position: fixed;*/
+  /*or not, maybe? */
+  overflow-y: scroll;
 }
 
 #authors-column > ul {
@@ -103,23 +126,27 @@ ul {
 
 #authors-column li {
   font-family: helveticaworld-regular;
-	font-size: 22px;
+	/*font-size: 22px;*/
+  font-size: 1.4em;
 }
 
-#content-column:before { /* byline */
+ #byline { /* byline */
   content: "";
   width: 0.4em;
   border-left: 0.25em solid red; /* the real byline */
   border-right: 0.25em solid black; /* the real byline */
-  top: 0;
   position: fixed;
   height: 100%;
+  top: 0;
+  left: 33%;
 }
 
 #content-column {
   width: 80%;
   float: right;
   height: auto;
+  /*margin-right: -10%;  really helps for smaller monitors */
+  padding-left: 5%;
 }
 
 /********************************************************************************/
