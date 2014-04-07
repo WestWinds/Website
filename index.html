@@ -10,7 +10,7 @@
     <script type="text/javascript">
         function navfix(event) {
             document.getElementById("spacer").style.height =
-            document.getElementById("nav").offsetHeight + "px";
+            (document.getElementById("nav").offsetHeight-1) + "px";
         };
         window.onload = navfix;
         window.onresize = navfix;
@@ -43,10 +43,9 @@
         <td>Art</td>
         <td>Video</td>
         <td>Music</td>
-        <td>Alumni<br /><span style="font-size: 14pt">Submissions</span></td>
+        <td>Alumni<br /><span style="font-size: 0.6em; vertical-align: top;">Submissions</span></td>
         <td>Archive</td>
         <td rowspan="2" width="8%"></td>
-        <td id="nav-fix" rowspan="2">&nbsp;</div>
       </tr>
     </table>
 
@@ -120,7 +119,7 @@
             <div class="title">Flavors</div>
             <div class="author">Aida Becic</div>
 
-                <pre>
+                <p>
 My teeth become dust, 
 Biting back the words
 
@@ -135,12 +134,12 @@ Mouth.
 And ironically enough,
 “I love you”
 Was the sweetest.
-                </pre>
+                </p>
 
                 <div class="title">That Feeling</div>
                 <div class="author">Amanda Carrasco</div>
 
-                <pre>
+                <p>
 I am beautiful because you made me this way,
 Your love and laughter filled me up 
 And put a smile on my face.
@@ -158,12 +157,12 @@ Soon to be someone else’s.
 I only wish the beauty within you
 Doesn’t die out.
 I only wish you stay beautiful.
-                </pre>
+                </p>
                 
                 <div class="title">Careless Whisper</div>
                 <div class="author">Brittany Holt</div>
 
-                <pre>
+                <p>
 Pen in hand, you stare at the paper,
 "Dear Mom and Dad," you say in a whisper
 You sigh and rip the paper up,
@@ -178,7 +177,7 @@ Made many hearts impossible to mend.
 
 Dedicated to Amanda Todd and all who have also thought that suicide was the answer to their problems.
 May you rest in paradise.
-                </pre>
+                </p>
             </div> <!-- end content-column -->
 
             <div style="clear: both;" /> <!-- CRITICALLY IMPORTANT for clearing floats -->

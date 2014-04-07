@@ -6,16 +6,6 @@ html, body {
   font-size: 100%;
 }
 
-pre {
-	margin-left: 10%;
-	font-family: helveticaworld-regular;
-	font-size: 1.1em;
-	line-height: 20px;
-	overflow-y: hidden;
-	overflow-x: auto;
-  margin-bottom: 50px;
-}
-
 table {
   /*border-collapse: collapse;*/
 }
@@ -75,7 +65,7 @@ ul {
   padding: auto;
 }
 
-#row-1 {
+#row-1, #row-2 {
   height: 50%;
 }
 
@@ -84,22 +74,22 @@ ul {
 }
 
 #row-2 td{
-  /*vertical-align: top;*/
+  vertical-align: top;
 }
 
 #nav td {
   color: white;
   font-family: FBI;
-  font-size: 200%;
+  font-size: 2em;
 }
 
 #nav img {
-
+  /* TODO size issues */
 }
 
 #spacer {
-  /*height: 20%;*/
   height: 0;
+    /* javascript hack in index.html gives us perfect functionality here */
 }
 
 #content {
@@ -109,14 +99,13 @@ ul {
   height: auto;
   min-height: 100%;
   padding-top: 10px;
-  
   box-shadow: 0 55px 0 55px rgba(100, 100, 100, 0.75); /* transparent gray */
 }
 
 #authors-column {
   float: left;
   /*position: fixed;*/
-  /*or not, maybe? */
+    /*or not, maybe? */
   overflow-y: scroll;
 }
 
@@ -142,11 +131,24 @@ ul {
 }
 
 #content-column {
-  width: 80%;
-  float: right;
-  height: auto;
-  /*margin-right: -10%;  really helps for smaller monitors */
-  padding-left: 5%;
+  width: auto;
+  float: left;
+  /*position: absolute;*/
+    /* still worth looking into */
+  display: inline-block;
+  padding-left: 15%;
+  max-width: 60%;
+}
+
+#content-column p { /* poems */
+  margin-left: 15%;
+  font-family: helveticaworld-regular;
+  font-size: 1.1em;
+  line-height: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-bottom: 50px;
+  white-space: pre-line;
 }
 
 /********************************************************************************/
