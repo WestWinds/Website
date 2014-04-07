@@ -1,9 +1,12 @@
-
 html, body {
   height: 100%;
   padding: 0;
   margin: 0;
   font-size: 100%;
+}
+
+@-viewport {
+  width: 100px;
 }
 
 table {
@@ -19,6 +22,7 @@ ul {
 }
 
 /* screen size responsiveness */
+/* TODO NOT WORKING */
 @media screen and (min-width: 3000px) {
   #nav-fix {
     width: 500px;
@@ -51,6 +55,8 @@ ul {
 #bg-image {
   position: fixed;
   width: 100%;
+  min-width: 2000px;
+  overflow-x: hidden;
   height: 100%;
   z-index: -1;
   overflow: hidden;
@@ -94,6 +100,7 @@ ul {
 
 #content {
   width: 57%;
+  min-width: 50em; /* might be CRUCIAL for narrow windows */
   margin: 0 auto;
   background-color: white;
   height: auto;
