@@ -54,12 +54,12 @@ ul {
 
 #bg-image {
   position: fixed;
-  width: 100%;
-  min-width: 2000px;
-  overflow-x: hidden;
-  height: 100%;
+  bottom: 0;
+  overflow-y: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
   z-index: -1;
-  overflow: hidden;
 }
 
 #nav {
@@ -99,7 +99,10 @@ ul {
 }
 
 #content {
-  width: 57%;
+  width: 55%;
+  position: absolute;
+  left: 0;
+  right: 0;
   min-width: 50em; /* might be CRUCIAL for narrow windows */
   margin: 0 auto;
   background-color: white;
@@ -113,7 +116,7 @@ ul {
   float: left;
   /*position: fixed;*/
     /*or not, maybe? */
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 #authors-column > ul {
