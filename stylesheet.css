@@ -21,17 +21,6 @@ ul {
   border: 5px solid yellow;
 }
 
-/* screen size responsiveness */
-/* TODO NOT WORKING */
-@media screen and (min-width: 3000px) {
-  #nav-fix {
-    width: 500px;
-    height: 100%;
-    background-color: lime;
-    display: block;
-  }
-}
-
 /*********************/
 .title, .author {
   font-family: FBI;
@@ -114,18 +103,16 @@ ul {
 
 #authors-column {
   float: left;
-  /*position: fixed;*/
-    /*or not, maybe? */
-  /* overflow-y: scroll; */
+  /*position: fixed;
+  overflow-y: scroll;*/
 }
 
 #authors-column > ul {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 #authors-column li {
   font-family: helveticaworld-regular;
-	/*font-size: 22px;*/
   font-size: 1.4em;
 }
 
@@ -136,11 +123,10 @@ ul {
   position: absolute;
   height: 100%;
   top: 0;
-  left: 33%;
+  left: 13em;
 }
 
 #content-column {
-  width: auto;
   float: left;
   /*position: absolute;*/
     /* still worth looking into */
