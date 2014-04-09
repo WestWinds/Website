@@ -19,8 +19,9 @@ ul {
 
 /*********************/
 .title, .author {
-  font-family: FBI;
+  font-family: 'cf_fbi_old_reportregular';
   text-align: center;
+  line-height: 30px;
 }
 
 .author:before {
@@ -70,8 +71,9 @@ ul {
 
 #nav td {
   color: white;
-  font-family: FBI;
+  font-family: 'cf_fbi_old_reportregular';
   font-size: 2em;
+  line-height: 30px;
 }
 
 #nav img {
@@ -143,8 +145,14 @@ ul {
 /********************************************************************************/
 
 @font-face {
-    font-family: FBI;
-    src: url('fonts/FBI.ttf');
+    font-family: 'cf_fbi_old_reportregular';
+    src: url('fonts/fbi-webfont.eot');
+    src: url('fonts/fbi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fbi-webfont.woff') format('woff'),
+         url('fonts/fbi-webfont.ttf') format('truetype'),
+         url('fonts/fbi-webfont.svg#cf_fbi_old_reportregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
