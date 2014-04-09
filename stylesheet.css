@@ -112,7 +112,7 @@ ul {
 }
 
 #authors-column li {
-  font-family: helveticaworld-regular;
+  font-family: helveticaworld-regular, Helvetica;
   font-size: 1.4em;
 }
 
@@ -134,7 +134,7 @@ ul {
 
 #content-column p { /* poems */
   margin-left: 15%;
-  font-family: helveticaworld-regular;
+  font-family: helveticaworld-regular, Helvetica;
   font-size: 1.1em;
   line-height: 20px;
   overflow-y: hidden;
@@ -161,7 +161,7 @@ ul {
     src: url('fonts/helveticaworld-regular.ttf');
 }
 
-@font-face {
+/* @font-face {
     font-family: helveticaworld-bold;
     src: url('fonts/helvetivaworld-bold.ttf');
 }
@@ -194,4 +194,4 @@ ul {
 @font-face {
     font-family: schoolbook-bold-italic;
     src: url('fonts/schoolbook-bold-italic.ttf');
-}
+} */
