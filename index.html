@@ -6,53 +6,47 @@
     <link rel="shortcut icon" href="/favicon.ico"><!--TODO: favicon-->
 
     <title>Poetry</title>
-
-    <script type="text/javascript">
-        function navfix(event) {
-            document.getElementById("spacer").style.height =
-            (document.getElementById("nav").offsetHeight-1) + "px";
-        };
-        window.onload = navfix;
-        window.onresize = navfix;
-    </script>
   </head>
 
   <body>
 
     <img id="bg-image" src="images/site-bg.png"/>
 
-    <table id="nav">
-      <tr id="row-1">
-        
-        <td rowspan="2" width="5%"></td>
-        <td rowspan="2" width="6%">
-            <img src="images/logo.png" />
-        </td>
-        <td rowspan="2" width="5%"></td>
+    <div id="nav-wrapper">
+        <table id="nav">
+          <tr id="row-1">
+            
+            <td rowspan="2" width="5%"></td>
+            <td rowspan="2" width="6%">
+                <img src="images/logo.png" />
+            </td>
+            <td rowspan="2" width="5%"></td>
 
-        <td colspan="2">Appreciations</td>
-        <td>Staff</td>
-        <td colspan="5" style="text-align: center;">Letter from the Editor-in-Chief</td>
-        <td style="text-align: right;">Search</td>
-      </tr>
-      <tr id="row-2">
-        <td>Poetry</td>
-        <td>Prose</td>
-        <td style="text-align: right;">Photo</td>
-        <td style="text-align: left;">graphy</td> <!-- yes I know this is weird -->
-        <td>Art</td>
-        <td>Video</td>
-        <td>Music</td>
-        <td>Alumni<br /><span style="font-size: 0.6em; vertical-align: top;">Submissions</span></td>
-        <td>Archive</td>
-        <td rowspan="2" width="8%"></td>
-      </tr>
-    </table>
-
-    <div id="spacer">&nbsp;</div>
-    <!-- stop the nav from covering the content -->
+            <td colspan="2">Appreciations</td>
+            <td>Staff</td>
+            <td colspan="5" style="text-align: center;">Letter from the Editor-in-Chief</td>
+            <td style="text-align: right;">Search</td>
+          </tr>
+          <tr id="row-2">
+            <td>Poetry</td>
+            <td>Prose</td>
+            <td style="text-align: right;">Photo</td>
+            <td style="text-align: left;">graphy</td> <!-- yes I know this is weird -->
+            <td>Art</td>
+            <td>Video</td>
+            <td>Music</td>
+            <td>Alumni<br /><span style="font-size: 0.6em; vertical-align: top;">Submissions</span></td>
+            <td>Archive</td>
+            <td rowspan="2" width="8%"></td>
+          </tr>
+        </table>
+    </div>
 
     <div id="content"> <!-- visible by white background -->
+        
+        <div id="spacer">&nbsp;</div>
+        <!-- stop the nav from covering the content -->
+
         <div id="authors-column">
                 
             <ul>

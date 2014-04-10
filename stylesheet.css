@@ -41,28 +41,31 @@ ul {
 #bg-image {
   position: fixed;
   bottom: 0;
-  overflow-y: hidden;
+  overflow: hidden;
   min-width: 100%;
   max-width: 100%;
   min-height: 100%;
   z-index: -1;
 }
 
-#nav {
+#nav-wrapper {
   background-color: black;
   width: 100%;
   position: fixed;
   z-index: 1;
-  max-height: 20%;
-  padding: auto;
 }
 
-#row-1, #row-2 {
+#nav {
+  max-width: 150em;
+  min-width: 115em;
+}
+
+#nav tr {
   height: 50%;
 }
 
 #row-1 td{
-  vertical-align: bottom;
+  /*vertical-align: bottom;*/
 }
 
 #row-2 td{
@@ -72,7 +75,7 @@ ul {
 #nav td {
   color: white;
   font-family: 'cf_fbi_old_reportregular';
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 30px;
 }
 
@@ -81,8 +84,7 @@ ul {
 }
 
 #spacer {
-  height: 0;
-    /* javascript hack in index.html gives us perfect functionality here */
+  height: 11em;
 }
 
 #content {
