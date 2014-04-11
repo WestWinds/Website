@@ -11,7 +11,7 @@ a {
 }
 
 table {
-  /*border-collapse: collapse;*/
+  border-collapse: collapse;
 }
 
 ul {
@@ -63,6 +63,8 @@ ul {
 
 #nav {
   min-width: 120em;
+  max-width: 120em;
+  margin-left: 3%;
 }
 
 #nav td {
@@ -71,11 +73,6 @@ ul {
   font-size: 2.5em;
   line-height: 30px;
   margin-top: 10%;
-}
-
-#nav img {
-  /* TODO size issues */
-    /* or maybe it's fine */
 }
 
 #spacer {
@@ -98,11 +95,16 @@ ul {
 
 #authors-column {
   float: left;
+  /*height: 100%;*/
   position: fixed;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 #authors-column > ul {
+  display: block;
+  position: static;
+  height: 100%;
+  overflow: scroll;
   margin-left: 5px;
   margin-top: 0;
 }
@@ -144,6 +146,12 @@ ul {
   max-width: 90%;
   margin: 10px auto;
   display: block;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -200px; /* offset */
 }
 
 /********************************************************************************/
