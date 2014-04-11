@@ -83,10 +83,12 @@ ul {
   font-family: 'cf_fbi_old_reportregular';
   font-size: 2.5em;
   line-height: 30px;
+  margin-top: 10%;
 }
 
 #nav img {
   /* TODO size issues */
+    /* or maybe it's fine */
 }
 
 #spacer {
@@ -109,8 +111,8 @@ ul {
 
 #authors-column {
   float: left;
-  /*position: fixed;
-  overflow-y: scroll;*/
+  position: fixed;
+  overflow-y: scroll;
 }
 
 #authors-column > ul {
@@ -132,7 +134,7 @@ ul {
   height: 100%;
   top: 0;
   display: inline-block;
-  margin-left: 3.5em;
+  margin-left: 15em;
 }
 
 #content-column {
