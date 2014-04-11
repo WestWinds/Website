@@ -5,6 +5,11 @@ html, body {
   font-size: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 table {
   /*border-collapse: collapse;*/
 }
@@ -104,6 +109,7 @@ ul {
 
 #authors-column {
   float: left;
+  /*width: auto;*/
   /*position: fixed;
   overflow-y: scroll;*/
 }
@@ -125,7 +131,8 @@ ul {
   position: absolute;
   height: 100%;
   top: 0;
-  left: 13em;
+  display: inline-block;
+  margin-left: 1em;
 }
 
 #content-column {
