@@ -57,7 +57,7 @@ ul {
 
 #nav {
   max-width: 150em;
-  min-width: 115em;
+  /*min-width: 115em;*/
 }
 
 #nav tr {
@@ -143,6 +143,11 @@ ul {
   overflow-x: auto;
   margin-bottom: 50px;
   white-space: pre-line;
+}
+
+#content-column img {
+  display: block;
+  margin: 0 auto;
 }
 
 /********************************************************************************/
