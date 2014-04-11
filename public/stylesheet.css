@@ -121,6 +121,7 @@ ul {
 #authors-column li {
   font-family: helveticaworld-regular, Helvetica;
   font-size: 1.4em;
+  margin: 10px auto;
 }
 
  #byline {
