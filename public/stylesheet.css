@@ -65,18 +65,6 @@ ul {
   min-width: 120em;
 }
 
-#nav tr {
-  height: 50%;
-}
-
-#row-1 td{
-  /*vertical-align: bottom;*/
-}
-
-#row-2 td{
-  vertical-align: top;
-}
-
 #nav td {
   color: white;
   font-family: 'cf_fbi_old_reportregular';
