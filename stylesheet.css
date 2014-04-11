@@ -109,13 +109,12 @@ ul {
 
 #authors-column {
   float: left;
-  /*width: auto;*/
   /*position: fixed;
   overflow-y: scroll;*/
 }
 
 #authors-column > ul {
-  margin-left: 15px;
+  margin-left: 5px;
   margin-top: 0;
 }
 
@@ -132,7 +131,7 @@ ul {
   height: 100%;
   top: 0;
   display: inline-block;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 #content-column {
