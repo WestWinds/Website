@@ -27,6 +27,7 @@ ul {
   font-family: 'cf_fbi_old_reportregular';
   text-align: center;
   line-height: 30px;
+  margin-bottom: 15px;
 }
 
 .author:before {
@@ -154,6 +155,7 @@ ul {
 #content-column img {
   margin-top: 20px;
   max-width: 90%;
+  margin: 0 auto;
 }
 
 /********************************************************************************/
