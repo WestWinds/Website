@@ -62,8 +62,7 @@ ul {
 }
 
 #nav {
-  max-width: 150em;
-  /*min-width: 115em;*/
+  min-width: 120em;
 }
 
 #nav tr {
