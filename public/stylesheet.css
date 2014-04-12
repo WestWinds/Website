@@ -18,8 +18,9 @@ ul {
   list-style-type: none;
 }
 
-.debug {
-  border: 5px solid yellow;
+iframe {
+  margin-top: 20px;
+  width: 90%;
 }
 
 /*********************/
@@ -27,7 +28,6 @@ ul {
   font-family: 'cf_fbi_old_reportregular';
   text-align: center;
   line-height: 30px;
-  margin-bottom: 15px;
 }
 
 .author:before {
@@ -72,11 +72,10 @@ ul {
   font-family: 'cf_fbi_old_reportregular';
   font-size: 2.5em;
   line-height: 30px;
-  margin-top: 10%;
 }
 
 #spacer {
-  height: 11em;
+  height: 10em;
 }
 
 #content {
@@ -124,6 +123,8 @@ ul {
 
 #content-column {
   padding-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 #content-column p { /* poems */
@@ -138,7 +139,6 @@ ul {
 }
 
 #content-column img {
-  margin-top: 20px;
   max-width: 90%;
   margin: 10px auto;
   display: block;
