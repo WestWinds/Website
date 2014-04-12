@@ -132,9 +132,10 @@ iframe {
   font-family: helveticaworld-regular, Helvetica;
   font-size: 1.1em;
   line-height: 20px;
-  overflow-y: hidden;
   overflow-x: auto;
+  overflow-y: hidden;
   margin-bottom: 50px;
+  padding-bottom: 5px;
   white-space: pre-line;
 }
 
