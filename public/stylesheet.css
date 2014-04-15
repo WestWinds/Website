@@ -3,7 +3,6 @@ html, body {
   padding: 0;
   margin: 0;
   font-size: 100%;
-  overflow-y: hidden;
 }
 
 a {
@@ -22,8 +21,6 @@ ul {
 iframe {
   margin-top: 20px;
   width: 90%;
-  border: none;
-  overflow: hidden;
 }
 
 /*********************/
@@ -57,28 +54,43 @@ iframe {
   z-index: -1;
 }
 
-#nav-frame {
-  margin-top: 0;
-  width: 100%;  /* overrides */
-
+#nav-wrapper {
+  background-color: black;
+  width: 100%;
   position: fixed;
   z-index: 1;
-  border: none;
+  max-height: 20%;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+#nav {
+  display: block;
+  min-width: 95em;
+  max-width: 120em;
+  margin-left: 3%;
+}
+
+#nav td {
+  color: white;
+  font-family: 'cf_fbi_old_reportregular';
+  font-size: 2.5em;
+  line-height: 30px;
 }
 
 #spacer {
-  height: 9.5em;
+  height: 10em;
 }
 
 #content {
-  width: 70%;
+  width: 100em;
   max-width: 95%;
   min-width: 60%;
-  position: absolute;
-  /*left: 0;*/
+  position: relative;
+  left: 0;
   right: 0;
-  /*margin: 0 auto;*/
-  margin-right: 5%; 
+  margin: 0 auto;
+  margin-right: 12%; 
     /*offset a bit to the right */
   background-color: white;
   padding-top: 10px;
@@ -87,9 +99,9 @@ iframe {
 
 #authors-column {
   height: 100%;
-  width: 100%;
   position: fixed;
-  /*padding-right: 50px;*/
+  overflow-y: auto;
+  padding-right: 20px;
 }
 
 #authors-column > ul {
@@ -123,18 +135,19 @@ iframe {
   margin-right: 20%;
 }
 
-/*@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1900px) {
   #content-column {
+    /*width: 30%;*/
     margin-right: 10%;
   }
   #content {
     margin-right: 5%;
     width: 90em;
   }
-  #authors-colu[mn {
+  #authors-column {
 
   }
-}*/
+}
 
 #content-column p { /* poems */
   margin-left: 15%;
