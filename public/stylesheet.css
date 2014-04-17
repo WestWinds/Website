@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-size: 100%;
+  overflow-y: hidden;
 }
 
 a {
@@ -54,28 +55,44 @@ iframe {
   z-index: -1;
 }
 
-#nav-wrapper {
+#nav {
+  display: table;
   background-color: black;
-  width: 100%;
+
   position: fixed;
   z-index: 1;
-  max-height: 20%;
-  overflow-x: auto;
-  overflow-y: visible;
-}
-
-#nav {
-  display: block;
-  min-width: 95em;
-  max-width: 120em;
-  margin-left: 3%;
-}
-
-#nav td {
+  width: 100%;
+  height: 20%;
+  max-height: 25%;
+  
   color: white;
   font-family: 'cf_fbi_old_reportregular';
-  font-size: 2.5em;
-  line-height: 30px;
+  font-size: 2.2em;
+  line-height: 40px;
+
+  padding: 10px;
+}
+
+#nav-links {
+  display: table-cell;
+  vertical-align: middle;
+  
+  white-space: nowrap;
+  word-spacing: 20px;
+}
+
+#nav img {
+  margin-left: 0.5em;
+  margin-right: 1em;
+  height: 100%;
+  width: auto;
+}
+
+hr {
+  visibility: hidden;
+  height: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 #spacer {
@@ -109,7 +126,7 @@ iframe {
 #authors-column > ul {
   height: 100%;
   margin-left: 5px;
-  overflow-y: auto;
+  padding-bottom: 50px; /* stops the last author from getting cut off mysteriously */
 }
 
 #authors-column li {
@@ -172,7 +189,7 @@ iframe {
 .anchor {
   display: block;
   position: relative;
-  top: -200px; /* offset */
+  top: -100px; /* offset */
 }
 
 /********************************************************************************/
