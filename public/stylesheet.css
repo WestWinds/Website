@@ -135,6 +135,7 @@ iframe {
   float: right;
   width: 40%; 
   margin-right: 20%;
+  min-width: 315px; /* content bleeding with byline -- TODO check on smaller screens */
 }
 
 /*@media screen and (max-width: 1900px) {
