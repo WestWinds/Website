@@ -55,28 +55,42 @@ iframe {
   z-index: -1;
 }
 
-#nav-wrapper {
+#nav {
   background-color: black;
-  width: 100%;
+
   position: fixed;
   z-index: 1;
-  max-height: 20%;
-  overflow-x: auto;
-  overflow-y: visible;
-}
-
-#nav {
-  display: block;
-  min-width: 95em;
-  max-width: 120em;
-  margin-left: 3%;
-}
-
-#nav td {
+  width: 100%;
+  height: auto;
+  
   color: white;
   font-family: 'cf_fbi_old_reportregular';
   font-size: 2.5em;
-  line-height: 30px;
+  line-height: 40px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#nav img {
+  margin-left: 0.5em;
+}
+
+#nav-links {
+  white-space: nowrap;
+  word-spacing: 25px;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  left: 300px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+#nav-links-inner {
+  height: 150px;
+  width: 2000px;
 }
 
 #spacer {
