@@ -103,7 +103,7 @@ iframe {
   width: 70%;
   max-width: 95%;
   min-width: 60%;
-  height: 100%;
+  height: auto;
   /*position: relative;*/
   position: absolute;
   /*left: 0;*/
