@@ -5,7 +5,15 @@
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
     <link rel="shortcut icon" href="/favicon.ico"><!--TODO: favicon-->
 
-    <title></title>
+    <title>Search</title>
+
+    <style type="text/css">
+      /* specific to search.html */
+      div#___gcse_0 {
+        width: 50%;
+        margin: 0 auto;
+      }
+    </style>
   </head>
 
   <body>
@@ -44,23 +52,25 @@
         <div id="spacer">&nbsp;</div>
         <!-- stop the nav from covering the content -->
 
-        <div id="authors-column">
-                
-            <div style="font-family: 'cf_fbi_old_reportregular'; font-size: 24pt; margin-bottom: 20px; line-height: 30px; margin-left: 45px;">Author</div>
-            <ul>
-                <a href="#cody"><li>Cody Black</li></a>
-            </ul>
-        </div>
-        <div id="byline"></div>
-        <div id="content-column">
-                
-            <a name="cody" class="anchor"></a>
-                <div class="title">This Time Next Year</div>
-                <div class="author">Cody Black</div>
+          <div>
+  
+            <script>
+  (function() {
+    var cx = '009518393083270360903:kvkneeu1f7g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 
-        </div> <!-- end content-column -->
+          </div>
 
-        <div style="clear: both;" /> <!-- CRITICALLY IMPORTANT for clearing floats -->
+        <div style="clear: both;"/> <!-- CRITICALLY IMPORTANT for clearing floats -->
         </div> <!-- end content -->
   </body>
 </html>
