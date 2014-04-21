@@ -11,31 +11,47 @@
     	body {
     		margin: 0;
     		padding: 0;
+    		background-image: url("images/index.jpg");
+    		background-size: cover;
     	}
 
     	img {
     		position: absolute;
     	}
 
-    	img#bg {
+    	img#bg-v {
+            position: fixed;
+            top: 0;
     		height: 100%;
     		right: 0;
     		width: 100%;
+    		z-index: -2;
+    	}
+    	
+    	img#bg-h {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            
     	}
 
     	img#index {
     		top: 0;
     		bottom: 0;
-    		width: 100%;
+    		height: 100%;
+    		width: auto;
     	}
     </style>
   </head>
 
   <body>
-  	<img src="images/index-bg.jpg" id="bg" />
-	<img src="images/index.jpg" usemap="#index" id="index" />
+  	<!--<img src="images/index-bg-h.jpg" id="bg-h" />-->
+  	<!--<img src="images/index-bg-v.jpg" id="bg-v" />-->
+	<!--<img src="images/index.jpg" usemap="#index" id="index" />-->
 
-	<map name="index">
+	<!--<map name="index">
 		<area href="music.html" shape="rect" coords="324,364,1288,634" style="outline:none;" target="_self" />
 		<area href="search.html" shape="rect" coords="1398,362,2354,632" style="outline:none;" target="_self" />
 		<area href="appreciations.html" shape="rect" coords="2854,196,3810,466" style="outline:none;" target="_self" />
@@ -48,7 +64,7 @@
 		<area href="archive.html" shape="rect" coords="1060,2388,1716,2642" style="outline:none;" target="_self" />
 		<area href="letterfromemma.html" shape="rect" coords="2364,2364,3928,2640" style="outline:none;" target="_self" />
 		<area href="staff.html" shape="rect" coords="1872,1596,2214,1786" style="outline:none;" target="_self" />
-	</map>
+	</map>-->
   
   </body>
 </html>
