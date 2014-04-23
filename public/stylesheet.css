@@ -43,6 +43,11 @@ iframe {
 .author {
   font-size: 1.3em;
 }
+
+.no-pseudo:before {
+  content: none !important;
+  display: none !important;
+}
 /*********************/
 
 
