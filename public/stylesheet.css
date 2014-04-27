@@ -125,7 +125,13 @@ iframe {
   height: 100%;
   position: fixed;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-right: 10px;
+  direction: rtl;
+}
+
+#authors-column * {
+  direction: ltr;
 }
 
 #authors-column > ul {
