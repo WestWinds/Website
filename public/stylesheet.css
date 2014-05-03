@@ -136,13 +136,13 @@ iframe {
 
 #authors-column > ul {
   height: 100%;
-  margin-left: 5px;
 }
 
 #authors-column li {
   font-family: helveticaworld-regular, Helvetica;
   font-size: 1.4em;
   margin: 10px auto;
+  margin-left: -10px;
 }
 
  #byline {
