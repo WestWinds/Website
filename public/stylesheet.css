@@ -128,7 +128,26 @@ iframe {
     /*offset a bit to the right */
   background-color: white;
   padding-top: 10px;
-  box-shadow: 0 0px 0 3em rgba(100, 100, 100, 0.75); /* transparent gray */
+}
+
+#content:before { /* transparent gray left */
+  box-shadow: 0px 0px 0px 3em rgba(100, 100, 100, 0.75) inset;
+  content: " ";
+  height: 100%;
+  left: -3em;
+  position: absolute;
+  top: 0;
+  width: 3em;
+}
+
+#content:after { /* transparent gray right */
+  box-shadow: 0px 0px 0px 3em rgba(100, 100, 100, 0.75) inset;
+  content: " ";
+  height: 100%;
+  right: -3em;
+  position: absolute;
+  top: 0;
+  width: 3em;
 }
 
 #authors-column {
